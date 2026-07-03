@@ -1,0 +1,11 @@
+{
+  "name": "growth-engine-skills",
+  "version": "0.1.0",
+  "description": "Growth Engine: a growth strategist with memory. Installs the skills into Claude Code, Zo Computer, or any SKILL.md-compatible agent.",
+  "bin": { "growth-engine": "bin/install.js" },
+  "files": ["bin", "skills", "prompts", "README.md", "LICENSE"],
+  "repository": "github:Jeff-Kazzee/growth-engine",
+  "author": "Jeff Kazzee",
+  "license": "MIT",
+  "keywords": ["claude", "skills", "zo-computer", "growth", "ai-agent"]
+}

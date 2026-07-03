@@ -6,18 +6,39 @@ It starts by interviewing you: who you are, what you want your brand to be, and 
 
 No hype, no guru sludge. It rejects weak ideas, kills stale commitments, and refuses to let you claim things you haven't earned.
 
-## Three ways to use it
+## Install
 
-**1. As a Claude plugin (Cowork / Claude Code)**
-Download `dist/growth-engine.plugin` and drop it into a Cowork chat, or install via Settings → Capabilities. In Claude Code: clone this repo and run `claude plugin install ./growth-engine`. Then say **"set up my growth engine"**.
+**One-line install (any machine with Node):**
 
-**2. As individual skills (Claude, Zo Computer, any SKILL.md-compatible agent)**
-Each folder in `skills/` is self-contained — take only what you want.
-- **Zo Computer**: copy any `skills/<name>/` folder into your Zo `Skills/` directory (same SKILL.md format). Keep the `growth-engine/` memory folder in your Zo files.
-- **Claude Code**: copy folders into `~/.claude/skills/`.
+```bash
+npx github:Jeff-Kazzee/growth-engine
+```
 
-**3. As plain prompts (any AI, no plugin system at all)**
-The `prompts/` folder has portable versions of everything — paste into Zo, Claude, ChatGPT, or whatever you use. See `prompts/README.md` for how to keep the memory working manually.
+Installs all six skills to `~/.claude/skills` (Claude Code). Options:
+
+```bash
+npx github:Jeff-Kazzee/growth-engine -- --list                                  # see available skills
+npx github:Jeff-Kazzee/growth-engine -- --skills growth-review,opportunity-radar # install a subset
+npx github:Jeff-Kazzee/growth-engine -- --dest /path/to/Skills                  # e.g. your Zo Skills/ folder
+```
+
+**Claude Code marketplace:**
+
+```
+/plugin marketplace add Jeff-Kazzee/growth-engine
+/plugin install growth-engine@growth-engine
+```
+
+**Claude Cowork (desktop app):**
+Download [`dist/growth-engine.plugin`](dist/growth-engine.plugin) and drop it into a chat, or install via Settings → Capabilities.
+
+**Zo Computer:**
+Zo uses the same SKILL.md format. Copy any `skills/<name>/` folder into your Zo `Skills/` directory (via the npx command with `--dest`, or upload manually). Keep the `growth-engine/` memory folder in your Zo files.
+
+**Any other AI (no plugin system at all):**
+The `prompts/` folder has portable versions of everything — paste into ChatGPT, Gemini, or whatever you use. See `prompts/README.md` for keeping the memory working manually.
+
+Then say: **"set up my growth engine"**.
 
 ## The skills
 
