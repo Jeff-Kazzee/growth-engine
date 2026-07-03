@@ -1,0 +1,8 @@
+{
+  "name": "growth-engine",
+  "version": "0.1.0",
+  "description": "A personal growth strategist for builders and creators: opportunity radar, niche research wikis, brand positioning, accountability reviews, and a self-improving playbook — all with persistent memory across sessions.",
+  "author": { "name": "Jeff Kazzee" },
+  "license": "MIT",
+  "keywords": ["growth", "opportunities", "niche-research", "personal-brand", "accountability", "indie-builder"]
+}
